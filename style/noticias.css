@@ -1,273 +1,183 @@
-@charset "UTF-8";
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
 :root {
-  --white-color: #fff;
-  --black-color: #000;
-  --primary-color: #000c49;
-  --blue-color: #1f349e;
-  --secondary-color: #ee7d14;
-  --tertiary-color: #6e6d6d;
-  --quaternary-color: #000418;
-
-  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
-  --border: 0.2rem solid rgba(0, 0, 0, 0.1);
-  --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
-  --outline-hover: 0.2rem solid var(--primary-color);
+  --bs-primary: #000c49;
+  --bs-secondary: #ee7d14;
+  --btn-gray: #eeeeee;
+  --btn-blue: #000c49;
 }
 
-* {
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+.text-secondary {
+  color: var(--bs-secondary) !important;
+}
+
+.border-primary {
+  border-color: var(--bs-primary) !important;
+}
+
+.btn-secondary {
+  background-color: var(--bs-secondary) !important;
   border: none;
-  text-decoration: none;
-  text-transform: none;
-  transition: all 0.2s linear;
 }
 
-html {
-  font-size: 62.5%; /* 1rem = 10px */
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  scroll-padding-top: 7rem;
+.btn-primary {
+  background-color: var(--btn-blue) !important;
+  border: none;
+}
+
+.bg-orange {
+  background-color: var(--bs-secondary);
+}
+
+.bg-transparent-to-orange {
+  background: transparent;
+}
+
+.bg-transparent-to-orange:hover {
+  background: var(--bs-secondary);
+  transition: transform 0.3s;
 }
 
 body {
-  background-color: #eee;
+  font-family: inter;
+  margin: 0;
+  padding: 0;
 }
 
-section {
-  padding: 2rem 9%;
+.logo {
+  max-height: 2.2rem;
 }
 
-/* ===================================== Home =============================== */
-
-.home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url('../assets/bg.png') no-repeat;
-  background-position: center;
+.bg-title {
+  background-image: url(../assets/bg-title-index.png);
   background-size: cover;
-  padding-top: 17rem;
-  padding-bottom: 10rem;
-}
-
-.home .content {
-  text-align: center;
-  justify-content: center;
-  width: 100rem;
-}
-
-.home .content h3 {
-  color: var(--white-color);
-  font-size: 6rem;
-
-  margin-top: 6rem;
-
-  text-transform: uppercase;
-}
-
-.home .content h3 span {
-  color: var(--secondary-color);
-}
-
-.home .content p {
-  color: var(--quaternary-color);
-  font-size: 1.7rem;
-  line-height: 1.8;
-}
-
-.home .content .text-content {
-  text-align: center;
-  justify-content: center;
-  margin: 2rem auto;
-  padding-top: 2rem;
-  font-size: 2rem;
-  justify-content: center;
-  text-transform: uppercase;
-  border-top: solid 1rem var(--secondary-color);
-  width: 50rem;
-}
-
-.home .content .text-content span {
-  color: var(--white-color);
-}
-
-.home .content .text-content .text-warning {
-  color: var(--secondary-color);
-}
-
-p {
-  font-size: 1.7rem;
-  color: var(--tertiary-color);
-  line-height: 1.8;
-}
-
-ul {
-  list-style: none;
-}
-
-ul li {
-  font-size: 1.7rem;
-  color: var(--tertiary-color);
-  line-height: 1.8;
-}
-
-.btn-home {
-  margin-top: 2rem;
-  display: inline-block;
-  padding: 0.8rem 3rem;
-  font-size: 1.7rem;
-  border-radius: 0.5rem;
-  border: 0.2rem solid var(--white-color);
-  color: var(--white-color);
-  cursor: pointer;
-  background: none;
-}
-
-.btn-home:hover {
-  background: var(--secondary-color);
-  color: var(--white-color);
-}
-
-/* ================================ Container =============================== */
-.container {
-  display: flex;
-  margin-top: 2rem;
-  padding: 2rem;
-}
-
-/* =========================== container-left =============================== */
-
-.container-left {
-  flex: 4; /* 80% */
-  padding: 0 2rem 2rem 2rem;
-}
-
-.monitarians {
-  padding: 0;
-}
-
-.monitarians .breadcrumb {
-  padding: 1.4rem;
-  font-size: 1.4rem;
-  background-color: #eee;
-  box-shadow: var(--box-shadow);
-  border-radius: 0.8rem;
-}
-
-.monitarians .breadcrumb a {
-  color: var(--primary-color);
-  text-decoration: none;
-  margin-left: 2rem;
-}
-
-.monitarians .breadcrumb span {
-  color: var(--tertiary-color);
-}
-
-.monitarians .box-main {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.monitarians .box-main h1 {
-  font-size: 2.4rem;
-  color: #333;
-  margin-bottom: 2rem;
-}
-
-.monitarians .box-main .news-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 4rem;
-}
-
-.monitarians .box-main .news-cards .card {
-  background-color: var(--white-color);
-  border-radius: 0.8rem;
-  box-shadow: var(--box-shadow);
-  overflow: hidden;
-  width: calc(33.33% - 2rem);
-  min-width: 28rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.monitarians .box-main .news-cards .card:hover {
-  transform: scale(1.02);
-}
-
-.monitarians .box-main .news-cards .card img {
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
-  height: 18rem;
-  object-fit: cover;
+  height: 432px;
 }
 
-.monitarians .box-main .news-cards .card .card-content {
-  padding: 1.6rem;
+.btn-gray {
+  background-color: var(--btn-gray);
 }
 
-.monitarians .box-main .news-cards .card .card-content h2 {
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 1rem;
+.navbar-list-orange li a:hover {
+  color: var(--bs-secondary);
 }
 
-.monitarians .box-main .news-cards .card .card-content p {
-  font-size: 1.4rem;
-  color: #777;
+.links-list-orange li {
+  transition: transform 0.3s;
 }
 
-/* =========================== container-right =============================== */
-
-.container-right {
-  flex: 1; /* 20% */
-  padding: 0;
+.links-list-orange li:hover {
+  transform: translateX(5px);
+  color: var(--bs-secondary);
 }
 
-.utilities {
-  padding: 1rem;
-  border-radius: 1rem;
+.btn-facebook:hover {
+  color: #3b5998;
+  cursor: pointer;
+}
+.btn-twitter-x:hover {
+  color: #3b3434;
+  cursor: pointer;
+}
+.btn-instagram:hover {
+  color: #e4405f;
+  cursor: pointer;
+}
+.btn-youtube:hover {
+  color: #cd201f;
+  cursor: pointer;
+}
+.btn-discord:hover {
+  color: #7289da;
+  cursor: pointer;
 }
 
-.utilities h1 {
-  color: var(--primary-color);
-  text-align: left;
-  margin-bottom: 2rem;
-  font-size: 3rem;
+.btn-white-bg-orange:hover {
+  color: #fff;
+  background-color: var(--bs-secondary);
 }
 
-.utilities .utilities-list {
-  background-color: var(--white-color);
-  box-shadow: var(--box-shadow);
-  list-style: none;
-  padding: 0;
-  text-align: center;
+.btn-list-white-bg-orange li:hover {
+  color: #fff;
+  background-color: var(--bs-secondary);
 }
 
-.utilities .utilities-list li {
-  border-bottom: 0.1rem solid #e0e0e0;
+/* ======== Estilização Geral ======== */
+.list-group-item {
+  border-bottom: 1px solid #ddd !important;
+  padding: 12px;
 }
 
-.utilities .utilities-list li a {
-  color: var(--primary-color);
-  font-weight: 500;
+/* Remove a linha do último item */
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+/* Estilização dos links dentro dos itens */
+.list-group-item a {
+  color: var(--bs-primary);
   text-decoration: none;
-  font-size: 1.2rem;
-  display: block;
-  padding: 1.2rem;
-  transition: background-color 0.3s, color 0.3s;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
 }
 
-.utilities .utilities-list li a:hover {
-  background-color: var(--secondary-color);
-  color: white;
-  transform: scale(1.02);
+/* Efeito hover */
+.list-group-item a:hover {
+  color: var(--bs-secondary) !important;
+}
+
+/* Ícone dentro dos itens */
+.list-group-item i {
+  margin-right: 1rem;
+}
+
+/* ======== Sidebar UTILIDADES ======== */
+.utilities h1 {
+  color: var(--bs-primary);
+  font-size: 1.6rem;
+}
+
+/* Estilização dos itens da barra de utilidades */
+.utilities .list-group-item {
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse */
+.utilities .list-group-item:hover {
+  background-color: #f5f5f5;
+  color: var(--bs-secondary) !important;
+}
+
+/* Banner superior */
+.banner-documents {
+  background: url("/assets/bg.png") no-repeat center center;
+  background-size: cover;
+  min-height: 150px;
+}
+
+[data-bs-theme="dark"] {
+  --bs-primary: #ffffff;
+
+  body {
+    background-color: #181a1b;
+  }
+  .bg-light {
+    background-color: #1b1e1f !important;
+  }
+
+  .btn-gray {
+    background-color: #222426;
+  }
+
+  .bg-white {
+    background-color: #181a1b !important;
+  }
 }
