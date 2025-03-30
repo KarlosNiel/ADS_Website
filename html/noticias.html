@@ -1,281 +1,248 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/noticias.css" />
-    <link rel="stylesheet" href="../style/style.css" />
-    <link rel="stylesheet" href="../style/media-query.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
-    <link rel="stylesheet" href="../style/documentos.css">
-    <title>Eventos e Noticias</title>
-  </head>
-  <body>
-    <header>
-        <nav class="navbar navbar-white bg-white m-0 p-0 pb-1">
-            <section class="container-fluid pb-3 pt-3 shadow-sm">
-                <div class="container-fluid d-flex justify-content-between align-items-center w-75">
-                    <!--Logo-->
-                    <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="/assets/logo.png" alt="Logo do site" class="img-fluid logo">
-                        <span class="fw-bold ms-1">ADS</span>
-                    </a>
+<html lang="pt-br" data-bs-theme="light">
 
-                    <!--Redes Sociais-->
-                    <ul class="navbar-nav flex-row gap-4 me-lg-4 d-flex align-items-center d-none d-sm-flex btn-list-orange">
-                        <li class="nav-item">
-                            <i class="bi bi-facebook btn-facebook fs-5"></i>
-                        </li>
-                        <li class="nav-item">
-                            <i class="bi bi-twitter-x btn-twitter-x fs-5"></i>
-                        </li>
-                        <li class="nav-item">
-                            <i class="bi bi-instagram btn-instagram fs-5"></i>
-                        </li>                          
-                        <li class="nav-item"> 
-                            <i class="bi bi-youtube btn-youtube fs-5"></i>
-                        </li>
-                        <li class="nav-item">
-                            <i class="bi bi-discord btn-discord fs-5"></i>
-                        </li>
-                    </ul>
-                    
-                    <div class="d-flex justify-content-between gap-3">
-                        <!--Dark mode button-->
-                        <button class="btn btn-gray btn-white-bg-orange">
-                            <i class="bi bi-moon-stars-fill"></i>
-                        </button>
-                        
-                        <!--sandwich button nav-->
-                        <button class="navbar-toggler btn-gray d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavContent" 
-                        aria-controls="navbarNavContent" aria-expanded="false" aria-label="Alternar navegação">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                </div>
-            </section>
-        </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícias</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../style/noticias.css"> <!-- Link para o CSS ----->
+</head>
 
-        <!--navbar expandable sandwich-->
-        <nav class="navbar navbar-expand-lg bg-white bg-light shadow">
-            <section class="container-fluid align-items-center pb-2">
-                <div class="collapse navbar-collapse" id="navbarNavContent">
-                    <ul class="navbar-nav m-auto d-flex align-items-center navbar-list-orange fs-6 gap-2">
-                        <li class="nav-item">
-                            <a class="nav-link fw-medium" href="index.html">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-medium" href="disciplinas.html">Disciplinas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-medium" href="extensoes.html">Extensões</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-medium" href="projects.html">Projetos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-medium" href="noticias.html">Noticias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-medium" href="documentos.html">Documentação</a>
-                </li>
+<body>
+  <header class="">
+    <nav class="navbar navbar-white bg-white m-0 p-0 pb-1">
+      <section class="container-fluid pb-3 pt-3 shadow-sm">
+        <div class="container-fluid d-flex justify-content-between align-items-center w-75">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="/assets/logo.png" alt="Logo do site" class="img-fluid logo">
+            <span class="fw-bold ms-1">ADS</span>
+          </a>
+
+          <ul class="navbar-nav flex-row gap-4 me-lg-4 d-flex align-items-center d-none d-sm-flex btn-list-orange">
+            <li class="nav-item">
+              <i class="bi bi-facebook btn-facebook fs-5"></i>
+            </li>
+            <li class="nav-item">
+              <i class="bi bi-twitter-x btn-twitter-x fs-5"></i>
+            </li>
+            <li class="nav-item">
+              <i class="bi bi-instagram btn-instagram fs-5"></i>
+            </li>
+            <li class="nav-item">
+              <i class="bi bi-youtube btn-youtube fs-5"></i>
+            </li>
+            <li class="nav-item">
+              <i class="bi bi-discord btn-discord fs-5"></i>
+            </li>
+          </ul>
+
+          <div class="d-flex justify-content-between gap-3">
+            <button class="btn btn-gray btn-white-bg-orange" id="themeToggle">
+              <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+            </button>
+
+            <button class="navbar-toggler btn-gray d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavContent" aria-controls="navbarNavContent" aria-expanded="false" aria-label="Alternar navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-light shadow">
+      <section class="container-fluid align-items-center pb-2">
+        <div class="collapse navbar-collapse" id="navbarNavContent">
+          <ul class="navbar-nav m-auto d-flex align-items-center navbar-list-orange fs-6 gap-2">
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="disciplinas.html">Disciplinas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="extensoes.html">Extensões</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="projects.html">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="noticias.html">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="documentos.html">Documentação</a>
+            </li>
           </ul>
         </div>
       </section>
-        </nav>
-    </header>
+    </nav>
+    <nav>
+      <section class="banner-documents text-white text-center py-5">
+        <h1>EVENTOS E NOTÍCIAS</h1>
+      </section>
+    </nav>
+  </header>
 
-    <section class="home" id="home">
-      <div class="content">
-        <h3>EVENTOS E NOTÍCIAS</h3>
-      </div>
-    </section>
+  <main>
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="row"><!-- Row principal -->
 
-    <section class="container">
-      <section class="container-left">
-        <section class="monitarians">
-          <nav class="breadcrumb">
-            <a href="../../index.html">Início</a> / <span>Eventos e Noticias</span>
-          </nav>
+          <!-- COLUNA ESQUERDA (NOTICIAS) -->
+          <div class="col-md-8">
 
-          <div class="box-main">
-            <h1>EVENTOS E NOTÍCIAS</h1>
-            <div class="news-cards">
-              <a href="./monitarians/posts/monitarian-python.html" class="card">
-                <img
-                  src="../assets/noticias/LogoADS.png"
-                  alt="Imagem da notícia"
-                />
-                <div class="card-content">
-                  <h2>
-                    Está aberto o Vestibular do Curso de ADS (Unifip)
-                  </h2>
-                  <p>
-                    Faça o Vestibular Gratuitamente Online!
-                  </p>
-                </div>
-              </a>
+            <!-- Subtítulo das pastas -->
+            <h2 class="text-secondary fw-bold mb-3">EVENTOS</h2>
 
-              <a href="#" class="card">
-                <img
-                  src="../assets/noticias/Evento.png"
-                  alt="Imagem da notícia"
-                />
-                <div class="card-content">
-                  <h2>
-                    ADS EXPERIENCE ! Garanta Sua Vaga
-                  </h2>
-                  <p>
-                    Evento do Curso de Ads, Ads Experience Começa Hoje , Garanta sua Vaga Remotamente
-                  </p>
-                </div>
-              </a>
-
-              <a href="#" class="card">
-                <img
-                  src="../assets/noticias/Projetos.png"
-                  alt="Imagem da notícia"
-                />
-                <div class="card-content">
-                  <h2>
-                    Hoje nosso curso abrirá sua vitrine de projetos do semestre 2025.1
-                  </h2>
-                  <p>
-                    Nosso showcase deste semestre contará com projetos da extensão curricular e de algumas disciplinas do curso.
-                  </p>
-                </div>
-              </a>
-
-              <a href="#" class="card">
-                <img
-                  src="../assets/noticias/horarios.webp"
-                  alt="Imagem da notícia"
-                />
-                <div class="card-content">
-                  <h2>
-                    Novos Horarios Do Semestre 2025.1
-                  </h2>
-                  <p>
-                    Horarios Das Disciplinas do Semestre 2025.1
-                  </p>
-                </div>
-              </a>
-
-              <a href="#" class="card">
-                <img
-                  src="../assets/noticias/bg-monitorias.png"
-                  alt="Imagem da notícia"
-                />
-                <div class="card-content">
-                  <h2>
-                    Está aberta a monitoria de Programação Orientada a Objetos
-                  </h2>
-                  <p>
-                    Se Inscreva e Vire Monitor!
-                  </p>
-                </div>
-              </a>
-
-              <a href="#" class="card">
-                <img
-                  src="../assets/noticias/bg-monitorias.png"
-                  alt="Imagem da notícia"
-                />
-                <div class="card-content">
-                  <h2>
-                    Está aberta a monitoria de Programação Estruturada(Phyton)
-                  </h2>
-                  <p>
-                    Se Inscreva e Vire Monitor!
-                  </p>
-                </div>
-              </a>
+            <!-- Pasta EVENTOS -->
+            <div class="mb-3">
+              <button class="btn btn-primary w-100 text-start" data-bs-toggle="collapse" data-bs-target="#documents-events">
+                <i class="fa-regular fa-folder me-2"></i> PROGRAMAÇÕES
+              </button>
+              <div id="documents-events" class="collapse mt-2 p-2 border rounded bg-white">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item border-bottom"><a href="#" class="text-decoration-none"><i class="fa-regular fa-file me-2"></i> ADS CONNECTION 2022</a></li>
+                  <li class="list-group-item border-bottom"><a href="#" class="text-decoration-none"><i class="fa-regular fa-file me-2"></i> ADS EXPERIENCE 2022</a></li>
+                  <li class="list-group-item border-bottom"><a href="#" class="text-decoration-none"><i class="fa-regular fa-file me-2"></i> ADS EXPERIENCE 2022 - PROGRAMAÇÃO</a></li>
+                  <li class="list-group-item border-bottom"><a href="#" class="text-decoration-none"><i class="fa-regular fa-file me-2"></i> ADS EXPERIENCE 2022 - REGULAMENTO</a></li>
+                  <li class="list-group-item"><a href="#" class="text-decoration-none"><i class="fa-regular fa-file me-2"></i> ADS EXPERIENCE 2022 - INSCRIÇÕES</a></li>
+                </ul>
+              </div>
             </div>
 
-            <section class="student-monitarian">
-              <div class="student">
-                <img src="" alt="" />
-                <span></span>
+            <!-- Seção NOTICIAS -->
+            <!-- Seção NOTICIAS -->
+<h2 class="fw-bold text-secondary mt-4 mb-3">NOTÍCIAS</h2>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item border-bottom d-flex align-items-center">
+    <div class="flex-grow-1 me-3">
+      <h2 class="h5"><a href="./monitarians/posts/monitarian-python.html" class="text-decoration-none">Está aberto o Vestibular do Curso de ADS (Unifip)</a></h2>
+      <p>Faça o Vestibular Gratuitamente Online!</p>
+    </div>
+    <img src="../assets/noticias/LogoADS.png" alt="Imagem da notícia" class="img-fluid" style="max-width: 150px;">
+  </li>
+  
+  <li class="list-group-item border-bottom d-flex align-items-center">
+    <div class="flex-grow-1 me-3">
+      <h2 class="h5"><a href="#" class="text-decoration-none">ADS EXPERIENCE ! Garanta Sua Vaga</a></h2>
+      <p>Evento do Curso de Ads, Ads Experience Começa Hoje , Garanta sua Vaga Remotamente</p>
+    </div>
+    <img src="../assets/noticias/Evento.png" alt="Imagem da notícia" class="img-fluid" style="max-width: 150px;">
+  </li>
+  
+  <li class="list-group-item border-bottom d-flex align-items-center">
+    <div class="flex-grow-1 me-3">
+      <h2 class="h5"><a href="#" class="text-decoration-none">Hoje nosso curso abrirá sua vitrine de projetos do semestre 2025.1</a></h2>
+      <p>Nosso showcase deste semestre contará com projetos da extensão curricular e de algumas disciplinas do curso.</p>
+    </div>
+    <img src="../assets/noticias/Projetos.png" alt="Imagem da notícia" class="img-fluid" style="max-width: 150px;">
+  </li>
+  
+  <li class="list-group-item border-bottom d-flex align-items-center">
+    <div class="flex-grow-1 me-3">
+      <h2 class="h5"><a href="#" class="text-decoration-none">Novos Horários Do Semestre 2025.1</a></h2>
+      <p>Horários das disciplinas do semestre 2025.1</p>
+    </div>
+    <img src="../assets/noticias/horarios.webp" alt="Imagem da notícia" class="img-fluid" style="max-width: 150px;">
+  </li>
+  
+  <li class="list-group-item border-bottom d-flex align-items-center">
+    <div class="flex-grow-1 me-3">
+      <h2 class="h5"><a href="#" class="text-decoration-none">Está aberta a monitoria de Programação Orientada a Objetos</a></h2>
+      <p>Se inscreva e vire monitor!</p>
+    </div>
+    <img src="../assets/noticias/bg-monitorias.png" alt="Imagem da notícia" class="img-fluid" style="max-width: 150px;">
+  </li>
+</ul>
+
+          </div><!-- Fim col-md-8 -->
+
+          <div class="col-md-4">
+            <section class="utilities">
+              <h1 class="fw-bold mb-3 text-primary">UTILIDADES</h1>
+              <div class="card border-0 shadow-sm">
+                <ul class="list-group list-group-flush text-center">
+                  <li class="list-group-item"><a href="#" class="text-decoration-none fw-bold text-primary">NOTÍCIAS</a></li>
+                  <li class="list-group-item"><a href="#" class="text-decoration-none fw-bold text-primary">REVISTA COOPEX</a></li>
+                  <li class="list-group-item"><a href="#" class="text-decoration-none fw-bold text-primary">DOWNLOADS</a></li>
+                  <li class="list-group-item"><a href="#" class="text-decoration-none fw-bold text-primary">BIBLIOTECA</a></li>
+                  <li class="list-group-item"><a href="#" class="text-decoration-none fw-bold text-primary">TRABALHE CONOSCO</a></li>
+                  <li class="list-group-item"><a href="#" class="text-decoration-none fw-bold text-primary">OUVIDORIA</a></li>
+                  <li class="list-group-item"><a href="#" class="text-decoration-none fw-bold text-primary">MATRÍCULA ACADÊMICA</a></li>
+                  <li class="list-group-item"><a href="#" class="text-decoration-none fw-bold text-primary">CALENDÁRIO ACADÊMICO</a></li>
+                </ul>
               </div>
             </section>
-          </div>
-        </section>
-      </section>
-      <section class="container-right">
-        <section class="utilities">
-          <h1>UTILIDADES</h1>
-          <ul class="utilities-list">
-            <li><a href="./noticias.html" class="links">EVENTOS E NOTÍCIAS</a><li>
-            <li><a href="#">REVISTA COOPEX</a></li>
-            <li><a href="#">DOWNLOADS</a></li>
-            <li><a href="#">BIBLIOTECA</a></li>
-            <li><a href="#">TRABALHE CONOSCO</a></li>
-            <li><a href="#">OUVIDORIA</a></li>
-            <li><a href="#">MATRÍCULA ACADÊMICA</a></li>
-            <li><a href="#">CALENDÁRIO ACADÊMICO</a></li>
-          </ul>
-        </section>
-      </section>
-    </section>
+          </div><!-- Fim col-md-4 -->
 
-    <footer class="bg-white py-5 text-primary">
-      <section class="container">
-        <div class="row text-center text-lg-start justify-content-center">
-          <!-- Redes Sociais -->
-          <div class="col-12 col-lg-3 mb-4">
-            <a class="navbar-brand d-flex align-items-center justify-content-center justify-content-lg-start mb-3" href="index.html">
-              <img src="/assets/logo.png" alt="Logo do site" class="img-fluid logo">
-              <span class="fw-bold fs-4 ms-1">ADS</span>
-            </a>
-            <p>Quer conhecer mais sobre nosso cotidiano? Acesse nossas redes sociais.</p>
-            <ul class="list-unstyled d-flex justify-content-center justify-content-lg-start btn-list-white-bg-orange">
-              <li class="btn btn-gray me-2"><i class="bi bi-facebook"></i></li>
-              <li class="btn btn-gray me-2"><i class="bi bi-twitter-x"></i></li>
-              <li class="btn btn-gray me-2"><i class="bi bi-instagram"></i></li>
-              <li class="btn btn-gray"><i class="bi bi-linkedin"></i></li>
-            </ul>
-          </div>
-  
-          <!-- Contate-nos -->
-          <div class="col-12 col-lg-3 mb-4">
-            <h4 class="mb-3 fw-bold">Contate-nos</h4>
-            <ul class="list-unstyled d-flex flex-column gap-3">
-              <li><i class="bi bi-telephone-fill me-2"></i><span>(83) 3421-4047</span></li>
-              <li><i class="bi bi-telephone-fill me-2"></i><span>(83) 3421-4047</span></li>
-              <li><i class="bi bi-envelope-fill me-2"></i><span>coordenacao@ads.fiponline.edu.br</span></li>
-              <li><i class="bi bi-geo-alt-fill me-2"></i><span>Patos, Paraíba, Brasil - 58704-440</span></li>
-            </ul>
-          </div>
-  
-          <!-- Links -->
-          <div class="col-12 col-lg-3 mb-4">
-            <h4 class="mb-3 fw-bold">Links</h4>
-            <ul class="list-unstyled d-flex flex-column gap-3 links-list-orange">
-              <li><i class="bi bi-arrow-right me-2"></i>Início</li>
-              <li><i class="bi bi-arrow-right me-2"></i>Extensões</li>
-              <li><i class="bi bi-arrow-right me-2"></i>Projetos</li>
-              <li><i class="bi bi-arrow-right me-2"></i>Documentação</li>
-              <li><i class="bi bi-arrow-right me-2"></i>Disciplinas</li>
-              <li><i class="bi bi-arrow-right me-2"></i>Monitorias</li>
-            </ul>
-          </div>
-  
-          <!-- Notícias -->
-          <div class="col-12 col-lg-3 mb-4">
-            <h4 class="mb-3 fw-bold">Notícias</h4>
-            <p>Inscreva-se para receber as últimas atualizações</p>
-            <form class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3" role="search">
-              <input class="form-control w-75" type="search" placeholder="Seu email" aria-label="Buscar">
-              <button class="btn btn-light btn-white-bg-orange border-primary w-50" type="submit">Inscreva-se</button>
-            </form>
-          </div>
+        </div><!-- Fim row -->
+      </div><!-- Fim container -->
+    </section>
+  </main>
+
+
+  <footer class="bg-white py-5 text-primary">
+    <section class="container">
+      <div class="row text-center text-lg-start justify-content-center">
+        <!-- Redes Sociais -->
+        <div class="col-12 col-lg-3 mb-4">
+          <a class="navbar-brand d-flex align-items-center justify-content-center justify-content-lg-start mb-3" href="index.html">
+            <img src="/assets/logo.png" alt="Logo do site" class="img-fluid logo">
+            <span class="fw-bold fs-4 ms-1">ADS</span>
+          </a>
+          <p>Quer conhecer mais sobre nosso cotidiano? Acesse nossas redes sociais.</p>
+          <ul class="list-unstyled d-flex justify-content-center justify-content-lg-start btn-list-white-bg-orange">
+            <li class="btn btn-gray me-2"><i class="bi bi-facebook"></i></li>
+            <li class="btn btn-gray me-2"><i class="bi bi-twitter-x"></i></li>
+            <li class="btn btn-gray me-2"><i class="bi bi-instagram"></i></li>
+            <li class="btn btn-gray"><i class="bi bi-linkedin"></i></li>
+          </ul>
         </div>
-  
-        <div class="border-top mt-3 d-flex justify-content-center fs-4 text-center">
-          <p class="mt-4">Criado pelos alunos de ADS | todos os direitos reservados!</p>
+
+        <!-- Contate-nos -->
+        <div class="col-12 col-lg-3 mb-4">
+          <h4 class="mb-3 fw-bold">Contate-nos</h4>
+          <ul class="list-unstyled d-flex flex-column gap-3">
+            <li><i class="bi bi-telephone-fill me-2"></i><span>(83) 3421-4047</span></li>
+            <li><i class="bi bi-telephone-fill me-2"></i><span>(83) 3421-4047</span></li>
+            <li><i class="bi bi-envelope-fill me-2"></i><span>coordenacao@ads.fiponline.edu.br</span></li>
+            <li><i class="bi bi-geo-alt-fill me-2"></i><span>Patos, Paraíba, Brasil - 58704-440</span></li>
+          </ul>
         </div>
-      </section>
-    </footer>
-  </body>
+
+        <!-- Links -->
+        <div class="col-12 col-lg-3 mb-4">
+          <h4 class="mb-3 fw-bold">Links</h4>
+          <ul class="list-unstyled d-flex flex-column gap-3 links-list-orange">
+            <li><i class="bi bi-arrow-right me-2"></i>Início</li>
+            <li><i class="bi bi-arrow-right me-2"></i>Extensões</li>
+            <li><i class="bi bi-arrow-right me-2"></i>Projetos</li>
+            <li><i class="bi bi-arrow-right me-2"></i>Documentação</li>
+            <li><i class="bi bi-arrow-right me-2"></i>Disciplinas</li>
+            <li><i class="bi bi-arrow-right me-2"></i>Monitorias</li>
+          </ul>
+        </div>
+
+        <!-- Notícias -->
+        <div class="col-12 col-lg-3 mb-4">
+          <h4 class="mb-3 fw-bold">Notícias</h4>
+          <p>Inscreva-se para receber as últimas atualizações</p>
+          <form class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3" role="search">
+            <input class="form-control w-75" type="search" placeholder="Seu email" aria-label="Buscar">
+            <button class="btn btn-light btn-white-bg-orange border-primary w-50" type="submit">Inscreva-se</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="border-top mt-3 d-flex justify-content-center fs-4 text-center">
+        <p class="mt-4">Criado pelos alunos de ADS | todos os direitos reservados!</p>
+      </div>
+    </section>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../js/darkMode.js"></script>
+</body>
+
 </html>
